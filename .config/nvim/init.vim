@@ -17,6 +17,7 @@ set ruler
 syntax on
 nnoremap j gj
 nnoremap k gk
+nnoremap q: <nop>
 
 set encoding=utf-8
 set termencoding=utf-8

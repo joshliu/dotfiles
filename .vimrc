@@ -17,6 +17,7 @@ nnoremap j gj
 nnoremap k gk
 nnoremap B ^
 nnoremap E $
+nnoremap q: <nop>
 
 set encoding=utf-8
 set termencoding=utf-8
