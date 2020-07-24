@@ -26,3 +26,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" remap :W
+command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
+command! -bang Q quit<bang>
