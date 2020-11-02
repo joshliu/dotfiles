@@ -40,6 +40,9 @@ call plug#end()
 nnoremap <Space>b :Buffers<CR>
 nnoremap <Space>f :Files<CR>
 nnoremap <Space>g :GFiles<CR>
+nnoremap <Space>r :Rg<CR>
+nnoremap <Space>s :Rg <C-r><C-w><CR>
+nnoremap <Space><Space> <C-^>
 
 " remap :W
 command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
