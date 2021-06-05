@@ -1,17 +1,21 @@
 #!/bin/bash
 
-/bin/bash dotfiles.sh
+UBUNTU_DIR=$(dirname $0)
+cd $UBUNTU_DIR
 
-# uncomment the version you want (ubuntu default)
+echo Running Ubuntu setup script...
 
-/bin/bash ubuntu.sh
-#/bin/bash macos.sh
+function confirm_run_script {
+    read -p "Run $1? (y/n): " RESP
+    if [[ $RESP =~ ^[Yy]$ ]]
+    then
+        /bin/bash $1
+    fi
+}
 
-# extra setup
-echo Installing Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-git config --global user.email "joshliu6830@gmail.com"
-git config --global user.name "Joshua Liu"
-git config --global core.editor "nvim"
+confirm_run_script apt.sh
+confirm_run_script curl_scripts.sh
+confirm_run_script config.sh
+confirm_run_script docker.sh
+confirm_run_script dotfiles.sh
 

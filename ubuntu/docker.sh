@@ -1,4 +1,5 @@
-echo Install Docker
+echo Installing Docker
+
 sudo apt remove docker docker-engine docker.io containerd runc
 curl https://get.docker.com | sh \
   && sudo systemctl start docker \

@@ -1,17 +1,6 @@
 #!/bin/bash
 
-echo Installing base packages
-sudo apt update
-sudo apt -y install git build-essential curl wget openssh-server gdb cmake
-
-echo Installing user tools
-sudo apt -y install vim neovim tmux i3 xcape
-
-echo Installing extras
-sudo apt -y install htop linux-tools-common linux-tools-generic ripgrep
-
-echo zsh install
-sudo apt -y install zsh
+echo zimfw install
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 echo neovim vim-plug install
@@ -22,3 +11,5 @@ echo fzf install
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+echo Installing Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
