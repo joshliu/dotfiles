@@ -157,18 +157,18 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        #status_command i3status
+        status_command i3status
         position top
-        status_command /home/josh/.cargo/bin/i3status-rs /home/josh/.config/i3/config.toml
-        colors {
-            separator #666666
-            background #222222
-            statusline #dddddd
-            focused_workspace #0088CC #0088CC #ffffff
-            active_workspace #333333 #333333 #ffffff
-            inactive_workspace #333333 #333333 #888888
-            urgent_workspace #2f343a #900000 #ffffff
-        }
+        #status_command /home/josh/.cargo/bin/i3status-rs /home/josh/.config/i3/config.toml
+        #colors {
+        #    separator #666666
+        #    background #222222
+        #    statusline #dddddd
+        #    focused_workspace #0088CC #0088CC #ffffff
+        #    active_workspace #333333 #333333 #ffffff
+        #    inactive_workspace #333333 #333333 #888888
+        #    urgent_workspace #2f343a #900000 #ffffff
+        #}
 }
 
 exec ~/.xinitrc
@@ -178,8 +178,6 @@ exec feh --bg-scale /var/local/monterey-dark.jpg
 #for_window [class=".*"] border pixel 0
 gaps inner 10
 gaps outer 5
-
-#bindsym $alt+l exec 
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
