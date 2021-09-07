@@ -18,4 +18,5 @@ confirm_run_script curl_scripts.sh
 confirm_run_script config.sh
 confirm_run_script docker.sh
 confirm_run_script dotfiles.sh
+confirm_run_script i3.sh
 

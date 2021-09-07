@@ -5,7 +5,7 @@ sudo apt update
 sudo apt -y install git build-essential curl wget openssh-server gdb cmake
 
 echo Installing user tools
-sudo apt -y install vim neovim tmux i3 xcape
+sudo apt -y install vim neovim tmux xcape
 
 echo Installing extras
 sudo apt -y install htop linux-tools-common linux-tools-generic ripgrep
