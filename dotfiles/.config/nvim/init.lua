@@ -46,14 +46,15 @@ vim.cmd [[
 ]]
 
 
-require("bootstrap")
-require("deps")
 -- enable filetype.lua
 vim.g.do_filetype_lua = 1
 
 -- map leader key to space
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+require("bootstrap")
+require("deps")
 
 local get_mapper = function(mode, noremap)
   return function(lhs, rhs, opts)
