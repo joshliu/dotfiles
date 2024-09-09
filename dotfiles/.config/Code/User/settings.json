@@ -1,0 +1,10 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "window.titleBarStyle": "custom",
+    "editor.minimap.enabled": false,
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-w>": false
+    },
+    "workbench.colorTheme": "One Monokai"
+}
